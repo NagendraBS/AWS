@@ -14,6 +14,6 @@
 # Why should I use IAM
 ------
 # How IAM works
-<img width="354" alt="image" src="https://github.com/sumanthrao04/Learning/assets/68411350/ebc8f8cb-2101-438b-b793-cca7eca510ea">
+<img width="800" alt="image" src="https://github.com/sumanthrao04/Learning/assets/68411350/ebc8f8cb-2101-438b-b793-cca7eca510ea">
 
 

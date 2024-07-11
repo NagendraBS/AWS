@@ -6,7 +6,8 @@
 
 
 * IAM stands for Identity and Access Management. 
-* It is a foundational service provided by AWS (Amazon Web Services) for managing ```users, groups, roles,``` and ```their permissions``` within AWS cloud infrastructure. That enables you to manage access to AWS InfraStructure Services and resources securely.
+* It is a foundational service provided by AWS (Amazon Web Services) for managing ```users, groups,  roles,``` and ```their permissions``` within AWS cloud infrastructure. That enables you to manage access to AWS InfraStructure Services and resources securely.
+* However IAM will be having Least Privileged principle.
 
 Exp : (IAM will Recognise any User in the way that, Weather that user is an Identified user or Not, If USER is an identified user then the IAM will Provide the permission to user for Accessing any available AWS Infrastructure Service , thats why it is Called as  "```IDENTITY``` and ```ACCESS MANAGEMENT```".)
 

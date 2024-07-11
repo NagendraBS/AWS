@@ -51,8 +51,7 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 # How IAM works
 <img width="800" alt="image" src="https://github.com/sumanthrao04/Learning/assets/68411350/ebc8f8cb-2101-438b-b793-cca7eca510ea">
 
-
-<img width="500" alt="image" src="https://github.com/sumanthrao04/Learning/assets/68411350/01c6e05b-a69b-4feb-8787-d55b5008ac96">
-
+* First, a human user or an application uses their sign-in credentials to authenticate with AWS. 
+* Authentication is provided by matching the sign-in credentials to a principal (an IAM user, federated user, IAM role, or application) trusted by the AWS account.
 
 

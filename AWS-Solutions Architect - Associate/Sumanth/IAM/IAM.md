@@ -28,7 +28,7 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 * AWS strongly recommend that you don't use the ```root user``` for the Professional operations. Even though if you want to Use Root Users itself Means,
 * ```AWS strongly recommends securing the root user account with multi-factor authentication (MFA) to add an additional layer of protection against unauthorized access.```
 
-#Characteristics of the Root User :
+### Characteristics of the Root User :
 * Created Automatically 
 * Default Administrative Access Permissions 
 * Highly Privileged
@@ -40,7 +40,7 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 * AWS Identity and Access Management is a powerful tool for securely managing access to your AWS resources.
 * One of the primary benefits of using IAM is the ability to grant shared access to your AWS account.
 
-# Advantages of using IAM (Identity and Access Management) 
+### Advantages of using IAM (Identity and Access Management) 
 * We Can Restrict the Access Permissions to the Required Users as per our organizational Requirements.
 * We can define specific access policies based on roles and responsibilities within our organizations.
 * IAM users support the best practice of ```least privilege```, which limits users to only the actions necessary for their specific tasks.

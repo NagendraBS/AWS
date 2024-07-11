@@ -16,4 +16,7 @@
 # How IAM works
 <img width="800" alt="image" src="https://github.com/sumanthrao04/Learning/assets/68411350/ebc8f8cb-2101-438b-b793-cca7eca510ea">
 
+<img width="500" alt="image" src="https://github.com/sumanthrao04/Learning/assets/68411350/01c6e05b-a69b-4feb-8787-d55b5008ac96">
+
+
 

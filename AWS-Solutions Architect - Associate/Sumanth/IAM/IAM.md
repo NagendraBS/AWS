@@ -29,9 +29,9 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 * ```AWS strongly recommends securing the root user account with multi-factor authentication (MFA) to add an additional layer of protection against unauthorized access.```
 
 #Characteristics of the Root User :
-*Created Automatically 
-*Default Administrative Access Permissions 
-*Highly Privileged
+* Created Automatically 
+* Default Administrative Access Permissions 
+* Highly Privileged
 
 
 

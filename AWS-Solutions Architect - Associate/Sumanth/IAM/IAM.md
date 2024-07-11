@@ -4,6 +4,11 @@
 * With IAM, you can manage permissions that control which AWS resources users can access.
 * You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
 
+* IAM stands for Identity and Access Management. 
+* It is a foundational service provided by AWS (Amazon Web Services) for managing users, groups, roles, and their permissions within AWS cloud infrastructure. That enables you to manage access to AWS InfraStructure Service and resources securely.
+
+Exp : (IAM will Recognise any User in the way that, Weather that user is an Identified user or Not, If USER is an identified user then the IAM will Provide the Access to that user to Use the any available AWS Infrastructure Service, thats why it is Called as  "IDENTITY and ACCESS MANAGEMENT".)
+
 ----
 
 # Root user

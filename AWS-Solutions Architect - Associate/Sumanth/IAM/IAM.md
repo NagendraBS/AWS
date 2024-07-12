@@ -171,7 +171,6 @@ In AWS IAM (Identity and Access Management), users, user groups, and roles are f
   * This identity is called the AWS account root user and is accessed by signing in with the email address and password that you used to create the account.
   * The root account has full administrative permissions, and these cannot be restricted
   *Best practice for root accounts:
-   ---------------------------------------------------
   * Don’t use the root user credentials.
   * Don’t share the root user credentials.
   * Create an IAM user and assign administrative permissions as required.
@@ -213,7 +212,7 @@ In AWS IAM (Identity and Access Management), users, user groups, and roles are f
 
 #### IAM roles
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/9db9298d-000c-4cf4-8666-a8e035fe6e33">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/9db9298d-000c-4cf4-8666-a8e035fe6e33">
 
 
 * Roles are created and then “assumed” by trusted entities and define a set of permissions for making AWS service requests

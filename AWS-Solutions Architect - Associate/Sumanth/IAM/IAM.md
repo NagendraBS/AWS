@@ -136,6 +136,8 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 In AWS IAM (Identity and Access Management), users, user groups, and roles are fundamental concepts used to manage access to AWS services and resources securely. Here's a breakdown of each:
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/4ff931ae-8e9d-4d7d-b5be-cfefe91db1d0">
+
+
 1. **Users**:
    - **Definition**: Users represent individual entities (people, applications, or services) within your organization who interact with AWS resources.
    - **Attributes**: Each user has a unique name and security credentials (such as password or access keys) associated with them.
@@ -153,13 +155,63 @@ In AWS IAM (Identity and Access Management), users, user groups, and roles are f
                      services, or other entities such as applications.
    - **Attributes**: Roles define what actions are allowed or denied when the role is assumed. They do not have their own credentials; instead, they are assumed using 
                      temporary security tokens.
-   - **Usage**: Roles are used to delegate access to AWS resources securely.
+   - **Usage**: Roles are used to delegate(Delegation, in a general sense, refers to the act of assigning tasks, responsibilities, or authority to another person or group 
+                  of people.) access to AWS resources securely.
 
 #### Key Points:
 - **Permissions**: Users, groups, and roles all have permissions policies that specify what actions they can perform on which AWS resources.
 - **Flexibility**: IAM allows you to finely control permissions by creating custom policies and attaching them to users, groups, or roles.
 - **Security**: Roles are often used for cross-account access or granting permissions to AWS services, enhancing security by reducing the exposure of long-term 
                 credentials.
+
+  ---
+  ### Users
+  #### AWS account root user
+  * When you first create an AWS account, you begin with one sign-in identity that has complete access to all AWS services and resources in the account.
+  * This identity is called the AWS account root user and is accessed by signing in with the email address and password that you used to create the account.
+  * The root account has full administrative permissions, and these cannot be restricted
+    **** Best practice for root accounts:
+  * Don’t use the root user credentials.
+  * Don’t share the root user credentials.
+  * Create an IAM user and assign administrative permissions as required.
+  * Enable MFA.
+
+  #### IAM users
+  <img width="446" alt="image" src="https://github.com/user-attachments/assets/3b8076ad-59db-4586-af84-afe0345abf22">
+
+  
+ * An IAM user is an identity within your AWS account that has specific permissions for a single person or application.
+ * An access key ID and secret access key for programmatic access to the AWS API, CLI, SDK, and other development tools.
+ * A password for access to the management console.
+ * IAM users can be created to represent applications, and these are known as “service accounts”.
+ * You can have up to 5000 users per AWS account
+ * Each user account has a friendly name and an ARN which uniquely identifies the user across AWS.
+ * An Amazon Resource Name (ARN) for the IAM user ->  ```arn:aws:iam::account-ID-without-hyphens:user/Richard```
+ * A unique ID is also created which is returned only when you create the user using the API, Tools for Windows PowerShell, or the AWS CLI.
+ * The Access Key ID and Secret Access Key are not the same as a password and cannot be used to login to the AWS console.
+ * The Access Key ID and Secret Access Key can only be generated once and must be regenerated if lost.
+ * A password policy can be defined for enforcing password length, complexity etc. (applies to all users).
+ * You can allow or disallow the ability to change passwords using an IAM policy.
+
+   
+#### IAM user groups
+
+
+ * An IAM group is an identity that specifies a collection of IAM users. 
+ * You can't use a group to sign-in. You can use groups to specify permissions for multiple users at a time.
+ * Groups make permissions easier to manage for large sets of users.
+ * A group is not an identity and cannot be identified as a principal in an IAM policy.
+ * Use groups to assign permissions to users.
+ * Use the principal of least privilege when assigning permissions.
+ * A user group can contain many users, and a user can belong to multiple user groups.
+ * User groups can't be nested; they can contain only users, not other user groups
+ * There is no default user group that automatically includes all users in the AWS account. If you want to have a user group like that, you must create it and assign each 
+   new user to it.
+
+#### IAM roles
+
+
+  
 
 
 

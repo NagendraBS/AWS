@@ -68,19 +68,20 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 *  After authentication,depending on the principal type the principal can be granted either permanent or temporary credentials to make requests to AWS
 
 ### Authentication
-*A principal must be authenticated (signed in to AWS) using their credentials to send a request to AWS
+* A principal must be authenticated (signed in to AWS) using their credentials to send a request to AWS
 #### Authentication Methods
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/ad37fa00-9776-42be-b188-c98a96ea8fd5">
-*To authenticate from the console as a root user, you must sign in with your email address and password.
-*As a federated user(third party or user from outside company or application), you are authenticated by your identity provider and granted access to AWS resources by assuming IAM roles. 
-*As an IAM user, provide your account ID or alias, and then your user name and password.
-*To authenticate workloads from the API or AWS CLI, you might use temporary credentials through being assigned a role or you might use long-term credentials by providing your access key and secret key.
-*AWS recommends that you use multi-factor authentication (MFA) and temporary credentials to increase the security of your account. 
+* To authenticate from the console as a root user, you must sign in with your email address and password.
+* As a federated user(third party or user from outside company or application), you are authenticated by your identity provider and granted access to AWS resources by assuming IAM roles. 
+* As an IAM user, provide your account ID or alias, and then your user name and password.
+* To authenticate workloads from the API or AWS CLI, you might use temporary credentials through being assigned a role or you might use long-term credentials by providing 
+ your access key and secret key.
+* AWS recommends that you use multi-factor authentication (MFA) and temporary credentials to increase the security of your account. 
 
  ### Request
-*When a principal tries to use the AWS Management Console, the AWS API, or the AWS CLI, that principal sends a request to AWS.
-*The request includes the following information:
-*Principals send requests via the Console, CLI, SDKs, or APIs.
+* When a principal tries to use the AWS Management Console, the AWS API, or the AWS CLI, that principal sends a request to AWS.
+* The request includes the following information:
+* Principals send requests via the Console, CLI, SDKs, or APIs.
 1)Actions (or operations) that the principal wants to perform on aws resources and This can be an action in the AWS Management Console, or an operation in the AWS CLI or AWS API
 2)Resources upon which the actions are performed.
 3)Principal Information about the principal includes the policies that are associated with the entity that the principal used to sign in
@@ -88,15 +89,16 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 5)Resource data – Data related to the resource that is being requested. This can include information such as a DynamoDB table name or a tag on an Amazon EC2 instance.
 
 ### Authorization
-*You must also be authorized (allowed) to complete your request.
-*During authorization, AWS uses values from the request context to check for policies that apply to the request. 
+* You must also be authorized (allowed) to complete your request.
+* During authorization, AWS uses values from the request context to check for policies that apply to the request. 
 * It then uses the policies to determine whether to allow or deny the request
 * IAM policies are stored in IAM as JSON documents and specify the permissions that are allowed or denied.
-*IAM policies can be:
+* IAM policies can be:
 1)User (identity) based policies -> users with permissions to access the AWS resources in their own account
 2)Resource-based policies -> Resource-based policies are popular for granting cross-account access.
-*IAM checks each policy that matches the context of your request.
+* IAM checks each policy that matches the context of your request.
 *If a single policy has a deny action IAM denies the request and stops evaluating (explicit deny).
+
 #### Evaluation logic: ( will learn in  Policy evaluation logic section in detail )
 1)By default all requests are denied (implicit deny).
 2)An explicit allow overrides the implicit deny.
@@ -104,26 +106,27 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 4)Only the root user has access to all resources in the account by default.  
 
 ### Actions or operations
-*After your request has been authenticated and authorized, AWS approves the actions or operations in your request.
-*Actions are defined by a service.
-*Actions are the things you can do to a resource such as viewing, creating, editing, deleting.
-*Any actions on resources that are not explicitly allowed are denied.
-*To allow a principal to perform an action you must include the necessary actions in a policy that applies to the principal or the affected resource.
-*example,IAM supports approximately 40 actions for a user resource, including the following actions:
+* After your request has been authenticated and authorized, AWS approves the actions or operations in your request.
+* Actions are defined by a service.
+* Actions are the things you can do to a resource such as viewing, creating, editing, deleting.
+* Any actions on resources that are not explicitly allowed are denied.
+* To allow a principal to perform an action you must include the necessary actions in a policy that applies to the principal or the affected resource.
+* example,IAM supports approximately 40 actions for a user resource, including the following actions:
 - CreateUser
 - DeleteUser
 - GetUser
 - UpdateUser
 
  ### Resources
-*A resource is an object that exists within a service.
-*E.g. EC2 instances, S3 buckets, IAM users, and DynamoDB tables.
-*Each AWS service defines a set of actions that can be performed on the resource.
-*After AWS approves the actions in your request, those actions can be performed on the related resources within your account.
+* A resource is an object that exists within a service.
+* E.g. EC2 instances, S3 buckets, IAM users, and DynamoDB tables.
+* Each AWS service defines a set of actions that can be performed on the resource.
+* After AWS approves the actions in your request, those actions can be performed on the related resources within your account.
 
 ### Another example for how IAM works
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/cb85c07a-518e-4462-bd8d-4757f8d7bb3c">
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/017e7cd2-7b6b-4a11-be1b-06ce05cd4799">
+----------------
 
 
 

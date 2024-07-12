@@ -3,7 +3,9 @@
 * AWS offers a wide range of cloud services, including computing power, storage, databases, machine learning, analytics, networking, developer tools, security, and more. 
 * These services are provided on a pay-as-you-go basis, allowing businesses and developers to scale and grow their applications without the need to invest in physical hardware or infrastructure.
 
-## Lets, Analyse with Practicle Scenario:
+
+## Why we need to use AWS ?
+### Lets, Analyse with Practicle Scenario:
 <img width="873" alt="image" src="https://github.com/user-attachments/assets/77fe5875-386b-4446-a179-6856b544fee8">
 
 * Lets Say, We Have to Run An Web Application for any organization, what are all Required set up we have to done ?
@@ -76,11 +78,6 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 * SaaS provides you with a complete product that is run and managed by the service provider. In most cases, people referring to SaaS are referring to end-user applications. With a SaaS offering, ```you don’t have to think about how the service is maintained or how the underlying infrastructure is managed```. You only need to think about how you will ``` use that particular software.```
 * In Simple Words, SaaS Delivers software applications over the internet on a subscription basis. It's like using a service or application directly online without worrying about the backend infrastructures.
 ```Examples``` in AWS include Amazon WorkMail for email and calendar services and Amazon Chime for online meetings.
-
-
-
-
-
 
 
 

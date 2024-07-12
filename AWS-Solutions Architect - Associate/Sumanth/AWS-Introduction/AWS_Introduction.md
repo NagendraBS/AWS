@@ -72,6 +72,7 @@ Examples in AWS include AWS Elastic Beanstalk for deploying and scaling web appl
 ### 3.SaaS (Software as a Service):
 
 ![AWS-Types-of-Cloud-Computing_Software-as-a-Service-N 0eb7e31fda0693dd4d7219c6d4442d3360cb60b9](https://github.com/user-attachments/assets/182e3e19-bcfa-497c-901f-e8eddbd76926)
+
 * SaaS provides you with a complete product that is run and managed by the service provider. In most cases, people referring to SaaS are referring to end-user applications (such as web-based email). With a SaaS offering, you don’t have to think about how the service is maintained or how the underlying infrastructure is managed. You only need to think about how you will use that particular software
 * Delivers software applications over the internet on a subscription basis. Users access these applications via a web browser.
 Examples in AWS include Amazon WorkMail for email and calendar services and Amazon Chime for online meetings.

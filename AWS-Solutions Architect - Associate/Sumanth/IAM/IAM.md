@@ -223,14 +223,13 @@ In AWS IAM (Identity and Access Management), users, user groups, and roles are f
 * Roles can be assumed temporarily through the console or programmatically with the AWS CLI, Tools for Windows PowerShell, or API.
 
   Role Delegation:
- -----------------------------
 * Create an IAM role with two policies:
 * Permissions policy – grants the user of the role the required permissions on a resource.
 * Trust policy – specifies the trusted accounts that are allowed to assume the role.
 * Wildcards (*) cannot be specified as a principal.
 * A permissions policy must also be attached to the user in the trusted account.
 
-  ####  Federated users
+  ##  Federated users
   In AWS (Amazon Web Services), federated users refer to users who are authenticated by an external identity provider (IdP) and granted temporary access to AWS resources without needing to have IAM user accounts in the AWS account. This approach is particularly useful in scenarios where organizations want to allow their existing users (such as employees, partners, or customers) to access AWS resources using their existing credentials.
 
 Here's how federated users work in AWS:
@@ -263,9 +262,9 @@ Here's how federated users work in AWS:
 
 
 
-#### How  Federated users works  
+## How  Federated users works  
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/abd8f915-bb58-4b1d-bd81-f5ab43483fa8">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/abd8f915-bb58-4b1d-bd81-f5ab43483fa8">
 
 AWS Identity and Access Management (IAM) is the service within AWS that helps you manage access to AWS services and resources securely. The AWS Management Console serves as a centralized place to manage IAM identities and access permissions.
 

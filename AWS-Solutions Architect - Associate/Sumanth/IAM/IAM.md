@@ -132,7 +132,7 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/017e7cd2-7b6b-4a11-be1b-06ce05cd4799">
 ----  
 
-### IAM Identities (users, user groups, and roles)
+# IAM Identities (users, user groups, and roles)
 In AWS IAM (Identity and Access Management), users, user groups, and roles are fundamental concepts used to manage access to AWS services and resources securely. Here's a breakdown of each:
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/4ff931ae-8e9d-4d7d-b5be-cfefe91db1d0">
@@ -170,14 +170,15 @@ In AWS IAM (Identity and Access Management), users, user groups, and roles are f
   * When you first create an AWS account, you begin with one sign-in identity that has complete access to all AWS services and resources in the account.
   * This identity is called the AWS account root user and is accessed by signing in with the email address and password that you used to create the account.
   * The root account has full administrative permissions, and these cannot be restricted
-    **** Best practice for root accounts:
+  *Best practice for root accounts:
+   ---------------------------------------------------
   * Don’t use the root user credentials.
   * Don’t share the root user credentials.
   * Create an IAM user and assign administrative permissions as required.
   * Enable MFA.
 
   #### IAM users
-  <img width="446" alt="image" src="https://github.com/user-attachments/assets/3b8076ad-59db-4586-af84-afe0345abf22">
+ <img width="1000" alt="image" src="https://github.com/user-attachments/assets/c1bd0b54-ae20-4f8d-b96b-9ae8d7afe9e1">
 
   
  * An IAM user is an identity within your AWS account that has specific permissions for a single person or application.
@@ -196,6 +197,8 @@ In AWS IAM (Identity and Access Management), users, user groups, and roles are f
    
 #### IAM user groups
 
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/8af808cc-2a4b-4837-80f8-e0a99d7142d5">
+
 
  * An IAM group is an identity that specifies a collection of IAM users. 
  * You can't use a group to sign-in. You can use groups to specify permissions for multiple users at a time.
@@ -209,6 +212,84 @@ In AWS IAM (Identity and Access Management), users, user groups, and roles are f
    new user to it.
 
 #### IAM roles
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/9db9298d-000c-4cf4-8666-a8e035fe6e33">
+
+
+* Roles are created and then “assumed” by trusted entities and define a set of permissions for making AWS service requests
+* role is intended to be assumable by anyone who needs it. Also, a role does not have standard long-term credentials such as a password or access keys associated with it. * Instead, when you assume a role, it provides you with temporary security credentials for your role session.
+* With IAM Roles you can delegate permissions to resources for users and services without using permanent credentials (e.g. user name and password).
+* A role can be assigned to a federated user who signs in using an external identity provider.
+* Roles can be assumed temporarily through the console or programmatically with the AWS CLI, Tools for Windows PowerShell, or API.
+
+  Role Delegation:
+ -----------------------------
+* Create an IAM role with two policies:
+* Permissions policy – grants the user of the role the required permissions on a resource.
+* Trust policy – specifies the trusted accounts that are allowed to assume the role.
+* Wildcards (*) cannot be specified as a principal.
+* A permissions policy must also be attached to the user in the trusted account.
+
+  ####  Federated users
+  In AWS (Amazon Web Services), federated users refer to users who are authenticated by an external identity provider (IdP) and granted temporary access to AWS resources without needing to have IAM user accounts in the AWS account. This approach is particularly useful in scenarios where organizations want to allow their existing users (such as employees, partners, or customers) to access AWS resources using their existing credentials.
+
+Here's how federated users work in AWS:
+
+##### 1. **Identity Federation Basics**:
+   - **External Identity Provider (IdP)**: This is an external service that manages user identities and authenticates users. Examples include Active Directory Federation Services (AD FS), Okta, Ping Identity, Google Workspace (formerly G Suite), or any SAML 2.0 or OpenID Connect (OIDC) compliant identity provider.
+
+#####  2. **Authentication Process**:
+   - **Assume Role API**: When a user from the external IdP wants to access AWS resources, they authenticate with the IdP using their credentials.
+   - **Role-Based Access**: AWS IAM roles are preconfigured with permissions specifying what actions federated users can perform and what resources they can access within the AWS account.
+   - **Temporary Security Credentials**: Upon successful authentication, the IdP issues temporary security credentials (an IAM role session) to the federated user.
+
+#####  3. **Key Concepts and Components**:
+   - **IAM Roles for Identity Providers**: These IAM roles are configured in the AWS account and establish a trust relationship with the external IdP. They define who can assume the role and the permissions associated with it.
+   - **Identity Providers (IdP)**: External services that authenticate and manage user identities. They issue assertions (tokens) to AWS, which AWS validates to grant access.
+
+#####  4. **Benefits of Federated Users**:
+   - **Single Sign-On (SSO)**: Users can access both AWS and other applications using the same set of credentials, reducing the need for multiple login credentials.
+   - **Centralized Management**: Identity and access management can be centralized in the external IdP, making it easier to manage user access across multiple systems.
+   - **Security**: Federated users access AWS resources with temporary credentials, reducing the exposure of long-term credentials and improving security posture.
+
+#####  5. **Use Cases**:
+   - **Enterprise Applications**: Allow employees to access AWS resources using their corporate credentials managed by the enterprise IdP.
+   - **Partner Access**: Grant access to AWS resources to users from partner organizations without requiring them to have AWS IAM user accounts.
+   - **Customer Access**: Provide customers with access to specific AWS resources or applications using their existing credentials.
+
+#####  6. **Implementation**:
+   - **AWS Identity Federation**: Managed through AWS IAM, which supports various federation standards such as SAML 2.0 and OpenID Connect.
+   - **Configuration**: Set up trust relationships between the AWS account and the external IdP, configure IAM roles for identity providers, and define permissions based on organizational policies.
+
+
+
+#### How  Federated users works  
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/abd8f915-bb58-4b1d-bd81-f5ab43483fa8">
+
+AWS Identity and Access Management (IAM) is the service within AWS that helps you manage access to AWS services and resources securely. The AWS Management Console serves as a centralized place to manage IAM identities and access permissions.
+
+When it comes to federated users, AWS supports identity federation, which allows you to grant temporary access to your AWS account to users authenticated through an external identity provider (IdP) such as Active Directory, Okta, or others that support Security Assertion Markup Language (SAML) 2.0 or OpenID Connect (OIDC). This process is facilitated through IAM roles.
+
+Here's how AWS Identity and the federated user concept are linked:
+
+1. **Identity Provider (IdP)**: The federated user is authenticated by an external identity provider (IdP) that supports SAML 2.0 or OIDC.
+
+2. **Federation Process**: When a user attempts to access AWS resources via the AWS Management Console or programmatically using AWS API/CLI, they are redirected to the IdP's login page for authentication.
+
+3. **Role Assertion**: Upon successful authentication, the IdP sends a SAML 2.0 assertion or OIDC token to AWS STS (Security Token Service).
+                        AWS STS validates the SAML assertion or OIDC token against the configured trust relationship between the AWS account and the IdP. This trust 
+                        relationship ensures that AWS can verify the authenticity of the federated user's identity and the assertions made by the IdP.
+
+5. **IAM Role Creation**: In AWS IAM, you create IAM roles that define the permissions federated users will have when authenticated. These roles specify what the federated users can do and access within your AWS account.
+
+6. **Temporary Credentials**: AWS STS validates the assertion/token and issues temporary security credentials (access key, secret key, session token) for the federated user based on the permissions defined in the IAM role.
+
+7. **Access to AWS Resources**: Using these temporary credentials, federated users can then access AWS resources according to the permissions defined by the IAM role.
+
+The AWS Identity Center (typically referred to as AWS Management Console for IAM) is where you manage IAM users, roles, groups, policies, and identity providers. It allows you to configure and administer federated access, roles, and permissions for federated users who authenticate via external IdPs.
+
+In summary, the AWS Identity Center (IAM Management Console) is the central place to configure IAM roles and permissions, including those for federated users authenticated via external identity providers. It plays a crucial role in defining and managing access controls for users accessing AWS resources using federated identities.
 
 
   

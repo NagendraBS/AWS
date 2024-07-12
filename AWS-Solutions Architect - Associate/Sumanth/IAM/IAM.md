@@ -70,15 +70,17 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 
 ### Authentication
 * A principal must be authenticated (signed in to AWS) using their credentials to send a request to AWS
+  
 #### Authentication Methods
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/ad37fa00-9776-42be-b188-c98a96ea8fd5">
-* To authenticate from the console as a root user, you must sign in with your email address and password.
-* As a federated user(third party or user from outside company or application), you are authenticated by your identity provider and granted access to AWS resources by 
+
+*  To authenticate from the console as a root user, you must sign in with your email address and password.
+*  As a federated user(third party or user from outside company or application), you are authenticated by your identity provider and granted access to AWS resources by 
   assuming IAM roles. 
-* As an IAM user, provide your account ID or alias, and then your user name and password.
-* To authenticate workloads from the API or AWS CLI, you might use temporary credentials through being assigned a role or you might use long-term credentials by providing 
-  your access key and secret key.
-* AWS recommends that you use multi-factor authentication (MFA) and temporary credentials to increase the security of your account. 
+*  As an IAM user, provide your account ID or alias, and then your user name and password.
+*  To authenticate workloads from the API or AWS CLI, you might use temporary credentials through being assigned a role or you might use long-term credentials by  
+   providing  your access key and secret key.
+*  AWS recommends that you use multi-factor authentication (MFA) and temporary credentials to increase the security of your account. 
 
  ### Request
 * When a principal tries to use the AWS Management Console, the AWS API, or the AWS CLI, that principal sends a request to AWS.

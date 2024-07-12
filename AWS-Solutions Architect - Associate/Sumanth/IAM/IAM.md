@@ -45,7 +45,7 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 * We Can Restrict the Access Permissions to the Required Users as per our organizational Requirements.
 * We can define specific access policies based on roles and responsibilities within our organizations.
 * IAM users support the best practice of ```least privilege```, which limits users to only the actions necessary for their specific tasks.
-* 
+ 
 
 ------
 # How IAM works
@@ -54,7 +54,8 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 * First, a human user or an application uses their sign-in credentials to authenticate with AWS. 
 * Authentication is provided by matching the sign-in credentials to a principal (an IAM user, federated user, IAM role, or application) trusted by the AWS account.
 * when you first sign in to the console and are on the console Home page, you aren't accessing a specific service.
-* When you select a service, the request for authorization is sent to that service and it looks to see if your identity is on the list of authorized users, what policies are being enforced to control the level of access granted, and any other policies that might be in effect.
+* When you select a service, the request for authorization is sent to that service and it looks to see if your identity is on the list of authorized users, what policies 
+  are being enforced to control the level of access granted, and any other policies that might be in effect.
 * Authorization requests can be made by principals within your AWS account or from another AWS account that you trust.
 * Once authorized, the principal can take action or perform operations on resources in your AWS account.
 * For example, the principal could launch a new Amazon Elastic Compute Cloud instance, modify IAM group membership, or delete Amazon Simple Storage Service buckets
@@ -72,21 +73,22 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 #### Authentication Methods
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/ad37fa00-9776-42be-b188-c98a96ea8fd5">
 * To authenticate from the console as a root user, you must sign in with your email address and password.
-* As a federated user(third party or user from outside company or application), you are authenticated by your identity provider and granted access to AWS resources by assuming IAM roles. 
+* As a federated user(third party or user from outside company or application), you are authenticated by your identity provider and granted access to AWS resources by 
+  assuming IAM roles. 
 * As an IAM user, provide your account ID or alias, and then your user name and password.
 * To authenticate workloads from the API or AWS CLI, you might use temporary credentials through being assigned a role or you might use long-term credentials by providing 
- your access key and secret key.
+  your access key and secret key.
 * AWS recommends that you use multi-factor authentication (MFA) and temporary credentials to increase the security of your account. 
 
  ### Request
 * When a principal tries to use the AWS Management Console, the AWS API, or the AWS CLI, that principal sends a request to AWS.
 * The request includes the following information:
 * Principals send requests via the Console, CLI, SDKs, or APIs.
-1)Actions (or operations) that the principal wants to perform on aws resources and This can be an action in the AWS Management Console, or an operation in the AWS CLI or AWS API
-2)Resources upon which the actions are performed.
-3)Principal Information about the principal includes the policies that are associated with the entity that the principal used to sign in
-4)Environment data – Information about the IP address, user agent, SSL enabled status, or the time of day.
-5)Resource data – Data related to the resource that is being requested. This can include information such as a DynamoDB table name or a tag on an Amazon EC2 instance.
+* Actions (or operations) that the principal wants to perform on aws resources and This can be an action in the AWS Management Console, or an operation in the AWS CLI or AWS API
+*  Resources upon which the actions are performed.
+*  Principal Information about the principal includes the policies that are associated with the entity that the principal used to sign in
+*  Environment data – Information about the IP address, user agent, SSL enabled status, or the time of day.
+* Resource data – Data related to the resource that is being requested. This can include information such as a DynamoDB table name or a tag on an Amazon EC2 instance.
 
 ### Authorization
 * You must also be authorized (allowed) to complete your request.
@@ -94,16 +96,16 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 * It then uses the policies to determine whether to allow or deny the request
 * IAM policies are stored in IAM as JSON documents and specify the permissions that are allowed or denied.
 * IAM policies can be:
-1)User (identity) based policies -> users with permissions to access the AWS resources in their own account
-2)Resource-based policies -> Resource-based policies are popular for granting cross-account access.
+    *User (identity) based policies -> users with permissions to access the AWS resources in their own account
+    *Resource-based policies -> Resource-based policies are popular for granting cross-account access.
 * IAM checks each policy that matches the context of your request.
 *If a single policy has a deny action IAM denies the request and stops evaluating (explicit deny).
 
 #### Evaluation logic: ( will learn in  Policy evaluation logic section in detail )
-1)By default all requests are denied (implicit deny).
-2)An explicit allow overrides the implicit deny.
-3)An explicit deny overrides any explicit allows.
-4)Only the root user has access to all resources in the account by default.  
+* By default all requests are denied (implicit deny).
+* An explicit allow overrides the implicit deny.
+* An explicit deny overrides any explicit allows.
+* Only the root user has access to all resources in the account by default.  
 
 ### Actions or operations
 * After your request has been authenticated and authorized, AWS approves the actions or operations in your request.

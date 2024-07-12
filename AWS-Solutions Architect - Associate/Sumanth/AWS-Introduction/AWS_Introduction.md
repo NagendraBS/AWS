@@ -43,5 +43,10 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 * "Cloud" refers to a network of remote servers hosted on the Internet that store, manage, and process data and applications, rather than a local server or personal computer.
 
 
-## Types of Cloud Computing Services
+## Types of Cloud Computing Services :
 
+### IaaS (Infrastructure as a Service)
+### PaaS (Platform as a Service)
+### SaaS (Software as a Service)
+
+* Each type of cloud computing Services mentioned Above will provides different levels of control, flexibility, and management so that you can select the right set of services for your needs.  

@@ -29,7 +29,7 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 
 * By setting up these components effectively on AWS,
 * you can ensure that the web application for the organization is secure, scalable, highly available, and cost-efficient.
-* Each setup can be customized based on specific application requirements and organizational needs.
+* Each setup can be customized based on specific application requirements and organizational needs. MoreOver Will only ```Pay for what we Use``` in AWS.
 
 ### ```That's why we Required Cloud Computation```
 
@@ -41,3 +41,7 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 * Instead of owning and maintaining physical servers or infrastructure, users can access these resources on-demand from a cloud service provider like Amazon Web Services (AWS).
 
 * "Cloud" refers to a network of remote servers hosted on the Internet that store, manage, and process data and applications, rather than a local server or personal computer.
+
+
+## Types of Cloud Computing Services
+

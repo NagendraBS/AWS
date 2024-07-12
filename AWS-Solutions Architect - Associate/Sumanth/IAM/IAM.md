@@ -130,7 +130,36 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 ### Another example for how IAM works
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/cb85c07a-518e-4462-bd8d-4757f8d7bb3c">
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/017e7cd2-7b6b-4a11-be1b-06ce05cd4799">
-----------------
+----  
+
+### IAM Identities (users, user groups, and roles)
+In AWS IAM (Identity and Access Management), users, user groups, and roles are fundamental concepts used to manage access to AWS services and resources securely. Here's a breakdown of each:
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/4ff931ae-8e9d-4d7d-b5be-cfefe91db1d0">
+1. **Users**:
+   - **Definition**: Users represent individual entities (people, applications, or services) within your organization who interact with AWS resources.
+   - **Attributes**: Each user has a unique name and security credentials (such as password or access keys) associated with them.
+   - **Usage**: Users are granted permissions directly, allowing them to perform actions and access resources based on those permissions.
+
+2. **User Groups**:
+   - **Definition**: User groups are collections of IAM users. By organizing users into groups, you can more easily manage permissions for multiple users simultaneously.
+                     by appliying policies to the group, who were all part of that group means users in that group can access that polices 
+   - **Attributes**: Groups have policies attached to them, defining what actions members of the group can perform on which AWS resources.
+   - **Usage**: Assigning permissions to a group simplifies permissions management, especially in larger organizations where users have similar job roles or permissions 
+                requirements.
+
+3. **Roles**:
+   - **Definition**: Roles are AWS identities with permissions policies attached. They are not associated with a specific user or group but are assumed by IAM users, AWS 
+                     services, or other entities such as applications.
+   - **Attributes**: Roles define what actions are allowed or denied when the role is assumed. They do not have their own credentials; instead, they are assumed using 
+                     temporary security tokens.
+   - **Usage**: Roles are used to delegate access to AWS resources securely.
+
+#### Key Points:
+- **Permissions**: Users, groups, and roles all have permissions policies that specify what actions they can perform on which AWS resources.
+- **Flexibility**: IAM allows you to finely control permissions by creating custom policies and attaching them to users, groups, or roles.
+- **Security**: Roles are often used for cross-account access or granting permissions to AWS services, enhancing security by reducing the exposure of long-term 
+                credentials.
 
 
 

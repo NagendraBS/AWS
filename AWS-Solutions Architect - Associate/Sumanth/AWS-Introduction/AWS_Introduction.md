@@ -10,7 +10,7 @@
 Computer, Operating System, Software, DataBase, Internet Connection, 
 Server to host our application. 
 
-*** The Actual problem Arises Here,
+### The Actual problem Arises Here,
 * When your Web application Become Popular as it will grow, The Users of your Web application Become More.
 * So as Our Users/Clients become More in Thousands or Millions in Number.
 * We have to obviously Expand Our On-Premisis Infrastructures like, Computers, Operating Systems, Softwares, DataBases and Servers Everything to handle this Enormous traffic.
@@ -20,12 +20,12 @@ Server to host our application.
   
 * I think, No Organizations are ready to Invest this Much of Huge Amount for Scaling thier Infrastructures. If they are Went on Thinking about all these Infrastructure, It may Imapact on their Business Logics/Technical works what exactly an Organization Wants to Perform.
 
-*** Solution :
+### Solution :
   
-*** So, What you think ?
+* So, What you think ?
 If you don't want to keep all of that with you and Some ```Service``` will do that job for you.
 
-** That Service name is ```"AMAZON WEB SERVICES"``` (AWS).
+* That Service name is ```"AMAZON WEB SERVICES"``` (AWS).
 
 
 * By setting up these components effectively on AWS,

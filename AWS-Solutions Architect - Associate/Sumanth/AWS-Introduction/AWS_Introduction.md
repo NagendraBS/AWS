@@ -45,7 +45,9 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 
 ## Types of Cloud Computing Services :
 
-### IaaS (Infrastructure as a Service): 
+* There are three types of Cloud Computing Services :
+  
+### 1.IaaS (Infrastructure as a Service): 
 
 ![AWS-Types-of-Cloud-Computing_Infrastructure-as-a-Service-N c5652344dcebff751adc45c0f75c17fb3cdd89a6](https://github.com/user-attachments/assets/53ebb4eb-3029-417f-829f-f6f86ef3e181)
 
@@ -57,10 +59,14 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 * Example in AWS: AWS EC2 (Elastic Compute Cloud) allows you to rent virtual servers (instances) where you can run your own applications and software.
 
   
-### PaaS (Platform as a Service):
+### 2.PaaS (Platform as a Service):
+
+![AWS-Types-of-Cloud-Computing_Platform-as-a-Service-N 7563f3df64c8491a4dd77bd9c1f011e6c03e7ae4](https://github.com/user-attachments/assets/84abd8f5-2fea-4bd0-ba04-e87420c41cc7)
 
 
-### SaaS (Software as a Service):
+### 3.SaaS (Software as a Service):
+
+![AWS-Types-of-Cloud-Computing_Software-as-a-Service-N 0eb7e31fda0693dd4d7219c6d4442d3360cb60b9](https://github.com/user-attachments/assets/182e3e19-bcfa-497c-901f-e8eddbd76926)
 
 
 

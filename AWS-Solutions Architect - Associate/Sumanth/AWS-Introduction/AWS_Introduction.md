@@ -3,7 +3,7 @@
 * AWS offers a wide range of cloud services, including computing power, storage, databases, machine learning, analytics, networking, developer tools, security, and more. 
 * These services are provided on a pay-as-you-go basis, allowing businesses and developers to scale and grow their applications without the need to invest in physical hardware or infrastructure.
 
-# Lets, Analyse with Practicle Scenario:
+## Lets, Analyse with Practicle Scenario:
 <img width="873" alt="image" src="https://github.com/user-attachments/assets/77fe5875-386b-4446-a179-6856b544fee8">
 
 * Lets Say, We Have to Run An Web Application for any organization, what are all Required set up we have to done ?
@@ -31,9 +31,13 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 * you can ensure that the web application for the organization is secure, scalable, highly available, and cost-efficient.
 * Each setup can be customized based on specific application requirements and organizational needs.
 
-# ```That's why we Required Cloud Computation```
+### ```That's why we Required Cloud Computation```
 
 
 
-# What is Cloud Computation ?
-* 
+## What is Cloud Computation ?
+* Cloud Computaion is the Process of Computing on-Demand availability of Computer system Resources.
+* It refers to the delivery of computing services including servers, storage, databases, networking, software and so on, over the Internet (the cloud).
+* Instead of owning and maintaining physical servers or infrastructure, users can access these resources on-demand from a cloud service provider like Amazon Web Services (AWS).
+
+* "Cloud" refers to a network of remote servers hosted on the Internet that store, manage, and process data and applications, rather than a local server or personal computer.

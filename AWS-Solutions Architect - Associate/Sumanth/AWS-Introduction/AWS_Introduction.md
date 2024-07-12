@@ -27,10 +27,11 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 
 * That Service name is ```"AMAZON WEB SERVICES"``` (AWS).
 
-
 * By setting up these components effectively on AWS,
 * you can ensure that the web application for the organization is secure, scalable, highly available, and cost-efficient.
 * Each setup can be customized based on specific application requirements and organizational needs.
+
+# ```That's why we Required Cloud Computation```
 
 
 

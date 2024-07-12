@@ -56,32 +56,28 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 * It's like renting virtual computers and storage space over the internet instead of buying and managing your own physical hardware.
 * IaaS gives you the highest level of flexibility and management control over your IT resources.
 * It is most similar to the existing IT resources with which many IT departments and developers are familiar.
-* Example in AWS: AWS EC2 (Elastic Compute Cloud) allows you to rent virtual servers (instances) where you can run your own applications and software.
+  ```Example``` in AWS: AWS EC2 (Elastic Compute Cloud) allows you to rent virtual servers (instances) where you can run your own applications and software.
 
   
 ### 2.PaaS (Platform as a Service):
 
 ![AWS-Types-of-Cloud-Computing_Platform-as-a-Service-N 7563f3df64c8491a4dd77bd9c1f011e6c03e7ae4](https://github.com/user-attachments/assets/84abd8f5-2fea-4bd0-ba04-e87420c41cc7)
 
-* PaaS removes the need for you to manage underlying infrastructure (usually hardware and operating systems), and allows you to focus on the deployment and management of your applications.
+* PaaS removes the need for you to manage underlying infrastructure (usually hardware and operating systems), and allows you to focus on the ```deployment and management``` of your applications.
 * This helps you be more efficient as you don’t need to worry about resource procurement, capacity planning, software maintenance, patching involved in running your application.
 * In Simple Words, PaaS provides a platform that helps you develop, run, and manage your applications without worrying about the underlying infrastructure.
 * It's like renting a ready-made development environment that handles things like servers, storage, and networking for you.
-Examples in AWS include AWS Elastic Beanstalk for deploying and scaling web applications and AWS Lambda for serverless computing.
+```Examples``` in AWS include AWS Elastic Beanstalk for deploying and scaling web applications and AWS Lambda for serverless computing.
 
 ### 3.SaaS (Software as a Service):
 
 ![AWS-Types-of-Cloud-Computing_Software-as-a-Service-N 0eb7e31fda0693dd4d7219c6d4442d3360cb60b9](https://github.com/user-attachments/assets/182e3e19-bcfa-497c-901f-e8eddbd76926)
 
-* SaaS provides you with a complete product that is run and managed by the service provider. In most cases, people referring to SaaS are referring to end-user applications (such as web-based email). With a SaaS offering, you don’t have to think about how the service is maintained or how the underlying infrastructure is managed. You only need to think about how you will use that particular software
-* Delivers software applications over the internet on a subscription basis. Users access these applications via a web browser.
-Examples in AWS include Amazon WorkMail for email and calendar services and Amazon Chime for online meetings.
+* SaaS provides you with a complete product that is run and managed by the service provider. In most cases, people referring to SaaS are referring to end-user applications. With a SaaS offering, ```you don’t have to think about how the service is maintained or how the underlying infrastructure is managed```. You only need to think about how you will ``` use that particular software.```
+* In Simple Words, SaaS Delivers software applications over the internet on a subscription basis. It's like using a service or application directly online without worrying about the backend infrastructures.
+```Examples``` in AWS include Amazon WorkMail for email and calendar services and Amazon Chime for online meetings.
 
-* Definition: SaaS delivers software applications over the internet, so you can access them through a web browser without needing to install or maintain any software on your own computer. It's like using a service or application directly online without worrying about the backend infrastructure.
-Example in AWS: AWS Marketplace offers a variety of third-party SaaS applications that run on AWS infrastructure, such as CRM systems, collaboration tools, and productivity software.
 
-* Delivers software applications over the internet on a subscription basis. Users access these applications via a web browser.
-Examples in AWS include Amazon WorkMail for email and calendar services and Amazon Chime for online meetings.
 
 
 

@@ -51,10 +51,7 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
   
 ### 1.IaaS (Infrastructure as a Service): 
 
-<img width="133" alt="image" src="https://github.com/user-attachments/assets/1721ee48-5544-4075-99bb-47d452c94cc6">
-
-
-![AWS-Types-of-Cloud-Computing_Infrastructure-as-a-Service-N c5652344dcebff751adc45c0f75c17fb3cdd89a6](https://github.com/user-attachments/assets/53ebb4eb-3029-417f-829f-f6f86ef3e181)
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/1721ee48-5544-4075-99bb-47d452c94cc6">
 
 
 * IaaS contains the basic building blocks for cloud IT, which gives you virtualized computing resources over the internet.
@@ -66,9 +63,9 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
   
 ### 2.PaaS (Platform as a Service):
 
-<img width="139" alt="image" src="https://github.com/user-attachments/assets/2eb56d6e-472d-41e7-8e21-3732c1d70127">
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/2eb56d6e-472d-41e7-8e21-3732c1d70127">
 
-![AWS-Types-of-Cloud-Computing_Platform-as-a-Service-N 7563f3df64c8491a4dd77bd9c1f011e6c03e7ae4](https://github.com/user-attachments/assets/84abd8f5-2fea-4bd0-ba04-e87420c41cc7)
+
 
 * PaaS removes the need for you to manage underlying infrastructure (usually hardware and operating systems), and ```allows you to focus on the deployment and management``` of your applications.
 * This helps you be more efficient as you don’t need to worry about resource procurement, capacity planning, software maintenance, patching involved in running your application.
@@ -78,9 +75,9 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 
 ### 3.SaaS (Software as a Service):
 
-<img width="133" alt="image" src="https://github.com/user-attachments/assets/8939248c-cf4f-4931-8c28-13fa589d6c43">
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/8939248c-cf4f-4931-8c28-13fa589d6c43">
 
-![AWS-Types-of-Cloud-Computing_Software-as-a-Service-N 0eb7e31fda0693dd4d7219c6d4442d3360cb60b9](https://github.com/user-attachments/assets/182e3e19-bcfa-497c-901f-e8eddbd76926)
+
 
 * SaaS provides you with a complete product that is run and managed by the service provider. In most cases, people referring to SaaS are referring to end-user applications. With a SaaS offering, ```you don’t have to think about how the service is maintained or how the underlying infrastructure is managed```. You only need to think about how you will ``` use that particular software.```
 * In Simple Words, SaaS Delivers software applications over the internet on a subscription basis. It's like using a service or application directly online without worrying about the backend infrastructures.

@@ -49,9 +49,20 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 
 ------
 # How IAM works
-<img width="800" alt="image" src="https://github.com/sumanthrao04/Learning/assets/68411350/ebc8f8cb-2101-438b-b793-cca7eca510ea">
+<img width="500" alt="image" src="https://github.com/sumanthrao04/Learning/assets/68411350/ebc8f8cb-2101-438b-b793-cca7eca510ea">
 
 * First, a human user or an application uses their sign-in credentials to authenticate with AWS. 
 * Authentication is provided by matching the sign-in credentials to a principal (an IAM user, federated user, IAM role, or application) trusted by the AWS account.
+* when you first sign in to the console and are on the console Home page, you aren't accessing a specific service.
+* When you select a service, the request for authorization is sent to that service and it looks to see if your identity is on the list of authorized users, what policies are being enforced to control the level of access granted, and any other policies that might be in effect.
+* Authorization requests can be made by principals within your AWS account or from another AWS account that you trust.
+* Once authorized, the principal can take action or perform operations on resources in your AWS account.
+* For example, the principal could launch a new Amazon Elastic Compute Cloud instance, modify IAM group membership, or delete Amazon Simple Storage Service buckets
+
+# IAM Elements
+
+### Principal
+* Principal is a person or application that uses the AWS account wheater it may be root account,Iam user, federated users and assumed roles
+
 
 

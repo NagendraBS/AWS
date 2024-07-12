@@ -63,6 +63,10 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 
 ![AWS-Types-of-Cloud-Computing_Platform-as-a-Service-N 7563f3df64c8491a4dd77bd9c1f011e6c03e7ae4](https://github.com/user-attachments/assets/84abd8f5-2fea-4bd0-ba04-e87420c41cc7)
 
+* PaaS removes the need for you to manage underlying infrastructure (usually hardware and operating systems), and allows you to focus on the deployment and management of your applications.
+* This helps you be more efficient as you don’t need to worry about resource procurement, capacity planning, software maintenance, patching involved in running your application.
+* In Simple Words, PaaS Provides a platform allowing customers to develop, run, and manage applications without dealing with the underlying infrastructure.
+Examples in AWS include AWS Elastic Beanstalk for deploying and scaling web applications and AWS Lambda for serverless computing.
 
 ### 3.SaaS (Software as a Service):
 

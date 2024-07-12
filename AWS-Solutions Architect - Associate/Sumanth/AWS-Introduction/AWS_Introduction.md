@@ -33,7 +33,7 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 
 ### ```That's why we Required Cloud Computation```
 
-
+-------
 
 ## What is Cloud Computation ?
 * Cloud Computaion is the Process of Computing on-Demand availability of Computer system Resources.
@@ -45,8 +45,24 @@ If you don't want to keep all of that with you and Some ```Service``` will do th
 
 ## Types of Cloud Computing Services :
 
-### IaaS (Infrastructure as a Service)
-### PaaS (Platform as a Service)
-### SaaS (Software as a Service)
+### IaaS (Infrastructure as a Service): 
+
+![AWS-Types-of-Cloud-Computing_Infrastructure-as-a-Service-N c5652344dcebff751adc45c0f75c17fb3cdd89a6](https://github.com/user-attachments/assets/53ebb4eb-3029-417f-829f-f6f86ef3e181)
+
+
+* IaaS contains the basic building blocks for cloud IT, which gives you virtualized computing resources over the internet.
+* It's like renting virtual computers and storage space over the internet instead of buying and managing your own physical hardware.
+* IaaS gives you the highest level of flexibility and management control over your IT resources.
+* It is most similar to the existing IT resources with which many IT departments and developers are familiar.
+* Example in AWS: AWS EC2 (Elastic Compute Cloud) allows you to rent virtual servers (instances) where you can run your own applications and software.
+
+  
+### PaaS (Platform as a Service):
+
+
+### SaaS (Software as a Service):
+
+
 
 * Each type of cloud computing Services mentioned Above will provides different levels of control, flexibility, and management so that you can select the right set of services for your needs.  
+

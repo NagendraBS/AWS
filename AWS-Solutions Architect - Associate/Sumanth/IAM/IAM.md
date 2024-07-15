@@ -1,4 +1,4 @@
-# IAM SERVICES
+# IAM SERVICES 
 # What is IAM
 * AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources.
 * With IAM, you can manage permissions that control which AWS resources users can access.
@@ -288,6 +288,29 @@ Here's how AWS Identity and the federated user concept are linked:
 The AWS Identity Center (typically referred to as AWS Management Console for IAM) is where you manage IAM users, roles, groups, policies, and identity providers. It allows you to configure and administer federated access, roles, and permissions for federated users who authenticate via external IdPs.
 
 In summary, the AWS Identity Center (IAM Management Console) is the central place to configure IAM roles and permissions, including those for federated users authenticated via external identity providers. It plays a crucial role in defining and managing access controls for users accessing AWS resources using federated identities.
+
+---
+---
+---
+# Access management for AWS
+* AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources.
+*  When a principal makes a request in AWS, the AWS enforcement code checks whether the principal is authenticated (signed in) and authorized (has permissions).
+*  ``` You manage access in AWS by creating policies and attaching them to IAM identities or AWS resources.```
+*  ``` Policies are JSON documents in AWS , when attached to an identity or resource, define their permissions. ```
+
+ <img width="500" alt="image" src="https://github.com/user-attachments/assets/4d1dd49f-9309-4566-bbbb-740e13dfcf1f">
+
+ * During authorization, the AWS enforcement code uses values from the request context to check for matching policies and determine whether to allow or deny the request.
+ * AWS checks each policy that applies to the context of the request.
+ * If a single policy denies the request, AWS denies the entire request and stops evaluating policies. This is called an explicit deny.
+ *  Because requests are denied by default, IAM authorizes your request only if every part of your request is allowed by the applicable policies.
+ *  The evaluation logic for a request within a single account follows these rules:
+ *  By default, all requests are implicitly denied. (Alternatively, by default, the AWS account root user has full access.)
+      - An explicit allow in an identity-based or resource-based policy overrides this default.
+      - If a permissions boundary, Organizations SCP, or session policy is present, it might override the allow with an implicit deny.
+      - An explicit deny in any policy overrides any allows.
+
+
 
 
   

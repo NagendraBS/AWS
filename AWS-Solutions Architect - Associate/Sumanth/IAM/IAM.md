@@ -309,6 +309,9 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
       - An explicit allow in an identity-based or resource-based policy overrides this default.
       - If a permissions boundary, Organizations SCP, or session policy is present, it might override the allow with an implicit deny.
       - An explicit deny in any policy overrides any allows.
+ * After your request has been authenticated and authorized, AWS approves the request.
+ * If you need to make a request in a different account, a policy in the other account must allow you to access the resource.
+ *  In addition, the IAM entity that you use to make the request must have an identity-based policy that allows the request.
 
 
 

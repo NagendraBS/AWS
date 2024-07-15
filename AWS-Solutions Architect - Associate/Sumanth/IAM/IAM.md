@@ -98,8 +98,8 @@ Exp : (IAM will Recognise any User in the way that, Weather that user is an Iden
 * It then uses the policies to determine whether to allow or deny the request
 * IAM policies are stored in IAM as JSON documents and specify the permissions that are allowed or denied.
 * IAM policies can be:
-    *User (identity) based policies -> users with permissions to access the AWS resources in their own account
-    *Resource-based policies -> Resource-based policies are popular for granting cross-account access.
+    * User (identity) based policies -> users with permissions to access the AWS resources in their own account
+    * Resource-based policies -> Resource-based policies are popular for granting cross-account access.
 * IAM checks each policy that matches the context of your request.
 *If a single policy has a deny action IAM denies the request and stops evaluating (explicit deny).
 

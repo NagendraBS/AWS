@@ -387,22 +387,22 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
 
 ## Examples of JSON policy syntax
 
-  <img width="580" alt="image" src="https://github.com/user-attachments/assets/294cfe11-c8cd-4e6e-9471-048e8bb7e4d0">
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/294cfe11-c8cd-4e6e-9471-048e8bb7e4d0">
 
   
 
-  <img width="661" alt="image" src="https://github.com/user-attachments/assets/36543a44-4dff-46ea-af23-e26201eb39a4">
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/36543a44-4dff-46ea-af23-e26201eb39a4">
 
 
-  <img width="800" alt="image" src="https://github.com/user-attachments/assets/9297dcb3-ebee-4301-a51e-45e12878b5ac">
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/9297dcb3-ebee-4301-a51e-45e12878b5ac">
 
   * Multiple statements and multiple policies
 
- <img width="500" alt="image" src="https://github.com/user-attachments/assets/0a98502e-e129-4da9-a610-20a74d309f35">
+ <img width="1000" alt="image" src="https://github.com/user-attachments/assets/0a98502e-e129-4da9-a610-20a74d309f35">
 
  ## Policy evaluation logic
 
- <img width="699" alt="image" src="https://github.com/user-attachments/assets/741dda0e-0494-40e5-92c6-b0f1c1e0ba36">
+ <img width="1000" alt="image" src="https://github.com/user-attachments/assets/741dda0e-0494-40e5-92c6-b0f1c1e0ba36">
 
 
  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/c68884db-df07-44ef-92a6-68c9c5550ac6">

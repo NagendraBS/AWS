@@ -361,8 +361,8 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
     ### IAM permissions boundaries
 
       *  A permissions boundary is an advanced feature in which you set the maximum permissions that an identity-based policy can grant to an IAM entity.
-      *  ``` When you set a permissions boundary for an entity, the entity can perform only the actions that are allowed by both its identity-based policies and its 
-          permissions boundaries.```
+      *  When you set a permissions boundary for an entity, the entity can perform only the actions that are allowed by both its identity-based policies and its 
+          permissions boundaries
       *  Resource-based policies that specify the user or role as the principal are not limited by the permissions boundary.
       *   An explicit deny in any of these policies  overrides the allow.
       *   Identity-based policies grant permission to the entity, and permissions boundaries limit those permissions.
@@ -388,8 +388,7 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
 
 
    ## JSON policy document structure
-
-    * You can use the visual editor in the AWS Management Console to create and edit customer managed policies without ever using JSON. 
+    * You can use the visual editor in the AWS Management Console to create and edit customer managed policies without ever using JSON.
     * However, if you use inline policies for groups or complex policies, you must still create and edit those policies in the JSON editor using the console.
 
    ### Examples of JSON policy syntax

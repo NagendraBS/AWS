@@ -3,7 +3,10 @@
 ## What is EC2(Elastic Cloud Compute) ? 
 * AWS EC2 (Amazon Elastic Compute Cloud) is a web service that allows developers/clients to rent virtual computers/Servers on which to run their own Software/Business applications. EC2 instances provide secure and scalable (resizeable) computing capacity in the cloud.
 
-## What is an EC Instance ?
+<img width="282" alt="image" src="https://github.com/user-attachments/assets/5f0835bd-76e0-4d61-92a0-021e9ba88e9b">
+
+
+## What is an EC2 Instance ?
 * In AWS, an "Instance" refers to a virtual server/Computer that customers can rent from Amazon Web Services (AWS) to run their applications. 
 * These instances are the fundamental building blocks of EC2 and provide the compute power needed to handle various workloads.
 
@@ -14,7 +17,8 @@
                   This scalability ensures that you can handle varying workloads efficiently without ```over-provisioning or under-provisioning``` resources.
 
 
-* 2. ```Flexibility```: EC2 offers a wide selection of instance types optimized for different use cases, such as compute-optimized, memory-optimized, storage-optimized, and GPU                      instances.
+* 2. ```Flexibility```: EC2 offers a wide selection of instance types optimized for different use cases, such as compute-optimized, memory-optimized, storage-optimized, and 
+                        GPU instances.
                   This allows you to choose instances that best fit your application's requirements.
 
 
@@ -41,4 +45,5 @@
 * 8. ```Development and Testing```: EC2 provides an ideal environment for development and testing purposes. You can quickly spin up instances with different configurations, test                                 your applications, and then terminate them when no longer needed, saving costs.
 
   
+
 

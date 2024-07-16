@@ -384,18 +384,8 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
       *  The permissions for a session are the intersection of the identity-based policies for the IAM entity (user or role) used to create the session and the session p 
          policies.
       *   Permissions can also come from a resource-based policy. An explicit deny in any of these policies overrides the allow.
+
    
----
-
-   ### JSON policy document structure
-   
-    * You can use the visual editor in the AWS Management Console to create and edit customer managed policies without ever using JSON.
-    * However, if you use inline policies for groups or complex policies, you must still create and edit those policies in the JSON editor using the console.
-
-   ### Examples of JSON policy syntax
-    gdjdj
-
-
     
 
      

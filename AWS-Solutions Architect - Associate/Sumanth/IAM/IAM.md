@@ -291,8 +291,12 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
 
 ---
 ---
----
 # Access management for AWS
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/942eb5d9-de3a-490b-8d72-1305bab9edf8"> 
+
+
+
 * AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources.
 *  When a principal makes a request in AWS, the AWS enforcement code checks whether the principal is authenticated (signed in) and authorized (has permissions).
 *  ``` You manage access in AWS by creating policies and attaching them to IAM identities or AWS resources.```
@@ -312,6 +316,90 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
  * After your request has been authenticated and authorized, AWS approves the request.
  * If you need to make a request in a different account, a policy in the other account must allow you to access the resource.
  *  In addition, the IAM entity that you use to make the request must have an identity-based policy that allows the request.
+
+   ## Policy types
+   ### Identity-based policies
+  * Identity-based policies are JSON permissions policy documents that control what actions an identity (users, groups of users, and roles) can perform, on which 
+    resources, and under what conditions.
+  * Identity-based policies – Identity-based policies are attached to an IAM identity (user, group of users, or role) and grant permissions to IAM entities (users and 
+     roles).  
+  * Identity-based policies can be further categorized:
+      * ``` AWS Managed policies```
+         - Created and administered by AWS.
+         - Managed policies that are created and managed by AWS.
+         - Save you having to create policies yourself.
+         - Can be attached to multiple users, groups, or roles within and across AWS accounts.
+         - Cannot change the permissions assigned.
+       
+      * ```Customer managed policies```
+          - Standalone policy that you create and administer in your own AWS account.
+          - Can be attached to multiple users, groups, and roles – but only within your own account.
+          - Can be created by copying an existing managed policy and then customizing it.
+          - Recommended for use cases where the existing AWS Managed Policies don’t meet the needs of your environment
+          - Customer managed policies provide more precise control over your policies than AWS managed policies.
+       
+       * ```Inline Policy```
+            - Policies that you add directly to a single user, group, or role.
+            - Inline policies maintain a strict one-to-one relationship between a policy and an identity.
+            -  They are deleted when you delete the identity.
+            -  When you delete the user, group, or role in which the inline policy is embedded, the policy will also be deleted.
+            -  In most cases, AWS recommends using Managed Policies instead of inline policies.
+
+     ### Resource-based policies
+
+      * Resource-based policies are JSON policy documents that you attach to a resource such as an Amazon S3 bucket.
+      *  These policies grant the specified principal permission to perform specific actions on that resource and defines under what conditions this applies.
+      *  Resource-based policies are inline policies.
+      *  There are no managed resource-based policies.
+      *  ```Resource-based policies grant permissions to the principal (account, user, role, or federated user) specified as the principal.```
+      *  To enable cross-account access, you can specify an entire account or IAM entities in another account as the principal in a resource-based policy.
+      *  The IAM service supports only one type of resource-based policy called a role trust policy, which is attached to an IAM role.
+      *  An IAM role is both an identity and a resource that supports resource-based policies.
+      *   For that reason, you must attach both a trust policy and an identity-based policy to an IAM role.
+      *   Trust policies define which principal entities (accounts, users, roles, and federated users) can assume the role.
+   
+    ### IAM permissions boundaries
+
+      *  A permissions boundary is an advanced feature in which you set the maximum permissions that an identity-based policy can grant to an IAM entity.
+      *  ``` When you set a permissions boundary for an entity, the entity can perform only the actions that are allowed by both its identity-based policies and its 
+          permissions boundaries.```
+      *  Resource-based policies that specify the user or role as the principal are not limited by the permissions boundary.
+      *   An explicit deny in any of these policies  overrides the allow.
+      *   Identity-based policies grant permission to the entity, and permissions boundaries limit those permissions.
+   
+    ###  Service control policies (SCPs)
+     *  AWS Organizations is a service for grouping and centrally managing the AWS accounts that your business owns.
+     *   If you enable all features in an organization, then you can apply service control policies (SCPs) to any or all of your accounts.
+     *  SCPs are JSON policies that specify the maximum permissions for an organization or organizational unit (OU).
+     *  The SCP limits permissions for entities in member accounts, including each AWS account root user. An explicit deny in any of these policies overrides the allow
+   
+    ### Access control lists (ACLs)
+      * Access control lists (ACLs) are service policies that allow you to control which principals in another account can access a resource.
+      * ACLs cannot be used to control access for a principal within the same account.
+      * ACLs are similar to resource-based policies, although they are the only policy type that does not use the JSON policy document format
+      *  Amazon S3, AWS WAF, and Amazon VPC are examples of services that support ACLs.
+   
+    ### Session policies
+      *  Session policies are advanced policies that you pass as a parameter when you programmatically create a temporary session for a role or federated user.
+      *  The permissions for a session are the intersection of the identity-based policies for the IAM entity (user or role) used to create the session and the session p 
+         policies.
+      *   Permissions can also come from a resource-based policy. An explicit deny in any of these policies overrides the allow.
+   
+
+
+   ## JSON policy document structure
+
+    * You can use the visual editor in the AWS Management Console to create and edit customer managed policies without ever using JSON. 
+    * However, if you use inline policies for groups or complex policies, you must still create and edit those policies in the JSON editor using the console.
+
+   ### Examples of JSON policy syntax
+
+
+    
+
+     
+         
+    
 
 
 

@@ -44,6 +44,7 @@
 
 * 8. ```Development and Testing```: EC2 provides an ideal environment for development and testing purposes. You can quickly spin up instances with different configurations, test                                 your applications, and then terminate them when no longer needed, saving costs.
 
+
   
 
 

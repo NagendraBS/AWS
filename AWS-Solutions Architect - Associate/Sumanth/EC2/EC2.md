@@ -1,1 +1,1 @@
-EC2
+# EC2 (Elastic Cloud Compute) 

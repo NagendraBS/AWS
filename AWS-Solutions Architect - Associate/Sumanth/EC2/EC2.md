@@ -5,6 +5,7 @@
 
 <img width="282" alt="image" src="https://github.com/user-attachments/assets/5f0835bd-76e0-4d61-92a0-021e9ba88e9b">
 
+<img width="673" alt="image" src="https://github.com/user-attachments/assets/4eb8facf-f352-4daa-b12c-03c0014b7cf0">
 
 ## What is an EC2 Instance ?
 * In AWS, an "Instance" refers to a virtual server/Computer that customers can rent from Amazon Web Services (AWS) to run their applications. 

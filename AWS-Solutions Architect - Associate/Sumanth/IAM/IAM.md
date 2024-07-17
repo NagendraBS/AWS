@@ -406,12 +406,25 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
 
 
  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/c68884db-df07-44ef-92a6-68c9c5550ac6">
+
+
+
+
+
+
+
  
 
+ # Bro Edhunna Last Alli Edi
+  
+## Most Common Use of IAM :
 
-   
-    
-
+* ROLES : Roles are Attached to Users.
+* USER CREDENTIALS : AWS Users Need username and Password for Login.
+* USER PASSWORD POLICIES : Let your Password Expiry in 90 day ?
+                           your password Need to Match the Determined Requirement.
+* MULTI FACTOR AUTHENTICATION (MFA) : use Extra Security for Login.
+* API ACCESS (CLI ACCESS) : Application Programmin Interface Access (Command Line Interface Access) Special Key to Access resources using CLI.
      
          
     

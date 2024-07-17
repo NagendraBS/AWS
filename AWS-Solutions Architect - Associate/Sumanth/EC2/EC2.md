@@ -79,4 +79,4 @@
 
 <img src="https://github.com/user-attachments/assets/99d2779a-35b5-45e3-bd21-90fec4a604ff" alt="image" style="width:300px;"/>
 
-
+* Above helps to understand, In Order to achive Data and Resource Replication Accross Availability Zones, The AZ's are connected With ```Low Latency Fiber Connections. ``` 

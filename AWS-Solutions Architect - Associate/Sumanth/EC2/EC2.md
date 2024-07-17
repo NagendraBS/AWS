@@ -62,8 +62,23 @@
 * To Overcome this we have Availability Zones called (AZs).
   
 ## Availability Zones (AZs) :
-* Here Each Region having one or More Isolated locations these isolated Locations are Called as Availability Zones (AZs).
-* Each Availability Zone is 
+* Here Each Region having one or More Isolated locations these isolated Locations are 
+  Called as Availability Zones (AZs).
+* Each Availability Zone is a physicalData Center in the Region. Also Each Az;s are 
+  Separated from Each Other.
+* AWS Availability Zones (AZs) are Denoted by US-EAST-1a,  US-EAST-1b.
+
+
+## Best Practices to Chhose the Regions :
+
+* Proximity : When We choose Regions it Need to be near to us and our Customers.
+* Services
+* Cost
+* ServiceLevel Agreement
+* Compliance 
+
+![image](https://github.com/user-attachments/assets/99d2779a-35b5-45e3-bd21-90fec4a604ff)
+
 
 
 

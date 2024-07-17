@@ -415,7 +415,6 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
 
  
 
- # Bro Edhunna Last Alli Edi
   
 ## Most Common Use of IAM :
 
@@ -426,6 +425,12 @@ In summary, the AWS Identity Center (IAM Management Console) is the central plac
 * MULTI FACTOR AUTHENTICATION (MFA) : use Extra Security for Login.
 * API ACCESS (CLI ACCESS) : Application Programmin Interface Access (Command Line Interface Access) Special Key to Access resources using CLI.
      
+
+## Discussion ON IAM
+
+*
+*
+*
          
     
 

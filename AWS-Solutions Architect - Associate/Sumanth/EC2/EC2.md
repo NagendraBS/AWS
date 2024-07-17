@@ -46,6 +46,35 @@
 * 8. ```Development and Testing```: EC2 provides an ideal environment for development and testing purposes. You can quickly spin up instances with different configurations, test                                 your applications, and then terminate them when no longer needed, saving costs.
 
 
+## AMI (Amazon Machine Image) :
+* An Amazon Machine Image (AMI) is an image provided by AWS that provides the information required to launch an instance
+* An AMI or Amazon Machine Image is the template that is used to Create a New instance/machine based on user Requirement.
+* Here, ```Image``` will Provide an Information, that is required to launch an instance.
+* Image is build from instruction from a complete and Executable Application.
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # AWS Regions and Availability Zones (AZs)
 
 ## AWS Region :

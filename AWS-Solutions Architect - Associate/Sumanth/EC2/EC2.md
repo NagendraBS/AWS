@@ -79,4 +79,9 @@
 
 <img src="https://github.com/user-attachments/assets/99d2779a-35b5-45e3-bd21-90fec4a604ff" alt="image" style="width:300px;"/>
 
-* Above helps to understand, In Order to achive Data and Resource Replication Accross Availability Zones, The AZ's are connected With ```Low Latency Fiber Connections. ``` 
+* Above helps to understand, In Order to achive Data and Resource Replication Accross Availability Zones, The AZ's are connected With ```Low Latency Fiber Connections. ```
+* If one of the Availabilty Zones Fails also We Can Achive Our Data from Other Availability Zone.
+
+* Currently there are ```69 Availability Zones``` and ```22 Regions``` Across the World .
+
+  <img width="524" alt="image" src="https://github.com/user-attachments/assets/9b9d7e79-7945-4b30-a4a9-4a875aab7481">

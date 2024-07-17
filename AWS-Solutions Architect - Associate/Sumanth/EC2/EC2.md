@@ -84,4 +84,4 @@
 
 * Currently there are ```69 Availability Zones``` and ```22 Regions``` Across the World .
 
-  <img width="524" alt="image" src="https://github.com/user-attachments/assets/9b9d7e79-7945-4b30-a4a9-4a875aab7481">
+  <img width="824" alt="image" src="https://github.com/user-attachments/assets/9b9d7e79-7945-4b30-a4a9-4a875aab7481">

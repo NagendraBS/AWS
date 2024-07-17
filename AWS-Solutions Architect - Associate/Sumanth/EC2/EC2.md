@@ -77,7 +77,7 @@
 * ServiceLevel Agreement
 * Compliance 
 
-![image](https://github.com/user-attachments/assets/99d2779a-35b5-45e3-bd21-90fec4a604ff)
+![image](https://github.com/user-attachments/assets/99d2779a-35b5-45e3-bd21-90fec4a604ff,width="300")
 
 
 

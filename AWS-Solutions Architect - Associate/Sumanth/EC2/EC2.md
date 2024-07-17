@@ -55,39 +55,15 @@
 * AWS Regions are Not Globally Scoped for AWS RDS.
 
 ** Note : ```There is a charge for data transfer between Regions.```
+* AWS Regions are Denoted by US-EAST-1, AP-SOUTH-1 etc,..
 
-## Here are the Some of the AWS Availability Zones :
- * Code	Name	          Opt-in                      Status
-us-east-2	US         East (Ohio)	               Not required
-us-east-1	US         East (Virginia)	           Not required
-us-west-1	US        West (N. California)	       Not required
-us-west-2	US        West (Oregon)	               Not required
-af-south-1	        Africa (Cape Town)	         Required
-ap-east-1	          Asia Pacific (Hong Kong)	   Required
-ap-south-2	        Asia Pacific (Hyderabad)	    Required
-ap-southeast-3	    Asia Pacific (Jakarta)	      Required
-ap-southeast-4	    Asia Pacific (Melbourne)	    Required
-ap-south-1	        Asia Pacific (Mumbai)	        Not required
-ap-northeast-3	    Asia Pacific (Osaka)	        Not required
-ap-northeast-2	    Asia Pacific (Seoul)	        Not required
-ap-southeast-1	    Asia Pacific (Singapore)	    Not required
-ap-southeast-2	   Asia Pacific (Sydney)	        Not required
-ap-northeast-1	   Asia Pacific (Tokyo)          	Not required
-ca-central-1	     Canada (Central)	              Not required
-ca-west-1	         Canada West (Calgary)          Required
-eu-central-1	      Europe (Frankfurt)	          Not required
-eu-west-1	        Europe (Ireland)	              Not required
-eu-west-2	          Europe (London)	              Not required
-eu-south-1	        Europe (Milan)	              Required
-eu-west-3	          Europe (Paris)	              Not required
-eu-south-2	        Europe (Spain)	              Required
-eu-north-1	        Europe (Stockholm)          	Not required
-eu-central-2	      Europe (Zurich)	              Required
-il-central-1	      Israel (Tel Aviv)            	Required
-me-south-1	        Middle East (Bahrain)	        Required
-me-central-1	      Middle East (UAE)	            Required
-sa-east-1	          South America (São Paulo)	    Not required
+### If Regions are Not having Replications, then How to Avoid Fault tolerance and Availability ?
 
+* To Overcome this we have Availability Zones called (AZs).
   
+## Availability Zones (AZs) :
+* Here Each Region having one or More Isolated locations these isolated Locations are Called as Availability Zones (AZs).
+* Each Availability Zone is 
+
 
 
